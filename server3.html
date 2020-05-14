@@ -201,7 +201,7 @@ analytics: {
     desktopSharingSources: ['screen', 'window'],
     googleApiApplicationClientID: "891533821363-uevbduccrmd5rvn2mf9u7paso46mdltl.apps.googleusercontent.com",
     microsoftApiApplicationClientID: "00000000-0000-0000-0000-000040240063",
-    enableCalendarIntegration: true,
+    enableCalendarIntegration: false,
     //new desktop sharing settings
     desktopSharingChromeExtId: 'kglhbbefdnlheedjiejgomgmfplipfeb', // Id of desktop streamer Chrome extension
     desktopSharingChromeDisabled: false,
@@ -237,15 +237,15 @@ analytics: {
 
     hiddenDomain: 'recorder.meet.jit.si',
     dropbox: {
-        appKey: '3v5iyto7n7az02w'
+        appKey: 'ontd7a2gwot8cl4'
     },
-    transcribingEnabled: false,
+    transcribingEnabled: true,
     enableRecording: true,
     liveStreamingEnabled: true,
     fileRecordingsEnabled: true,
-    fileRecordingsServiceEnabled: false,
-    fileRecordingsServiceSharingEnabled: false,
-    requireDisplayName: false,
+    fileRecordingsServiceEnabled: true,
+    fileRecordingsServiceSharingEnabled: true,
+    requireDisplayName: true,
     recordingType: 'jibri',
     enableWelcomePage: false,
     isBrand: false,
@@ -388,8 +388,8 @@ var interfaceConfig = {
     VERTICAL_FILMSTRIP: true,
 
     // A html text to be shown to guests on the close page, false disables it
-    CLOSE_PAGE_GUEST_HINT: '<div class = "hint-msg">For a complete meeting history <a href = "https://app.8x8.vc/?register=true" rel = "noopener" target = "_blank">sign up now</a> <br> for 8x8 Video Meetings.',
-    SHOW_PROMOTIONAL_CLOSE_PAGE: true,
+    //CLOSE_PAGE_GUEST_HINT: '<div class = "hint-msg">For a complete meeting history <a href = "https://app.8x8.vc/?register=true" rel = "noopener" target = "_blank">sign up now</a> <br> for 8x8 Video Meetings.',
+    SHOW_PROMOTIONAL_CLOSE_PAGE: false,
 
     RANDOM_AVATAR_URL_PREFIX: 'https://abotars.jitsi.net/meeple/',
     RANDOM_AVATAR_URL_SUFFIX: '',
@@ -431,7 +431,7 @@ var interfaceConfig = {
      * @type {boolean}
      */
     MOBILE_APP_PROMO: false,
-
+    OPEN_IN_MOBILE_BROWSER: true,
     /**
      * Maximum coeficient of the ratio of the large video to the visible area
      * after the large video is scaled to fit the window.
@@ -444,7 +444,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://community.jitsi.org/',
+    SUPPORT_URL: 'https://keeptalkingapp.tk#contact',
 
     /**
      * Whether the connection indicator icon should hide itself based on
@@ -518,7 +518,7 @@ var interfaceConfig = {
     DISABLE_PRESENCE_STATUS: true,
 
     // If true, notifications regarding joining/leaving are no longer displayed
-    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true
+    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true,
 
     /**
      * How many columns the tile view can expand to. The respected range is
